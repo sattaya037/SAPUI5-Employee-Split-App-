@@ -1,0 +1,36 @@
+<mvc:View controllerName="employee.employee.controller.Master" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.f"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<!--<App id="masterPage">-->
+	<!--	<pages>-->
+			<Page id="master" title="Employee">
+				<content>
+					<Toolbar>
+						<SearchField
+						showRefreshButton="{device>/isNoTouch}"
+						liveChange="onSearch"  width="100%"/>
+					</Toolbar>
+					<List id="employeeList" items="{Model>/GetEmployeeListSet}"  mode="{device>/listMode}">
+						<infoToolbar>
+							<Toolbar visible="false" id="idInfoToolbar">
+								<Label id="idFilterLabel"/>
+							</Toolbar>
+						</infoToolbar>
+						<items>
+							<ObjectListItem title="{Model>Firstname} {Model>Lastname} ({Model>Nickname})" 	
+							type="Active" press="onItemPress"  icon="">
+								<firstStatus>
+									<ObjectStatus text="{Model>Tel}"/>
+								</firstStatus>
+								<secondStatus>
+									<ObjectStatus text="{Model>Email}"/>
+								</secondStatus>
+							</ObjectListItem>
+							<!--<StandardListItem title="{JSON>FirstName}" icon="{JSON>Picture}" iconDensityAware="false" iconInset="false" info="{JSON>Email}"-->
+							<!--	type="Active" custom:to="{JSON>Phone}"/>-->
+						</items>
+					</List>
+				</content>
+			</Page>
+	<!--	</pages>-->
+	<!--</App>-->
+</mvc:View>

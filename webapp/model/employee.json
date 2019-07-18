@@ -1,0 +1,55 @@
+{
+	"employee":[
+		{
+		"FirstName":"Chris",
+		"LastName":"Hemsworth",
+	    "NickName":"Chris",
+	    "FirstNameTH":"คริส ",
+		"LastNameTH":"เฮมส์เวิร์ท ",
+	    "NickNameTH":"คริส",
+	    "EmployeeID":"001",
+	    "Phone":"0993567284",
+	    "Position":"ABAP",
+		"Picture":"model/images/employee1.jpg",
+		"Email":"Thor@gmail.com",
+		"Gender":"Male",
+		"BirthDate":"24/02/1997"
+	},
+	{
+		"FirstName":"John",
+		"LastName":"Wick",
+	    "NickName":"John",
+	    "EmployeeID":"002",
+	    "Phone":"0993567284",
+	    "Position":"ABAP",
+		"Picture":"model/images/employee2.jpg",
+		"Email":"John@gmail.com",
+		"Gender":"Male",
+		"BirthDate":"24/02/1997"
+	},
+	{
+		"FirstName":"Wade",
+		"LastName":"Wilson",
+	    "NickName":"Wade",
+	    "EmployeeID":"003",
+	    "Phone":"0993567284",
+	    "Position":"ABAP",
+		"Picture":"model/images/employee3.jpg",
+		"Email":"deadpool@gmail.com",
+		"Gender":"Male",
+		"BirthDate":"24/02/1997"
+	},
+	{
+		"FirstName":"Scoutt",
+		"LastName":"Lang",
+	    "NickName":"Scoutt",
+	    "EmployeeID":"004",
+	    "Phone":"0993567284",
+	    "Position":"ABAP",
+		"Picture":"model/images/employee4.jpg",
+		"Email":"antman@gmail.com",
+		"Gender":"Male",
+		"BirthDate":"24/02/1997"
+	}
+	]
+}

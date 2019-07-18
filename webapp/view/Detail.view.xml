@@ -1,0 +1,62 @@
+<mvc:View controllerName="employee.employee.controller.Detail" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:uxap="sap.uxap" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:p="sap.f">
+	<!--<App id="DetailPage">-->
+	<!--	<pages >-->
+			<Page id="employeePage" navButtonPress="onNavBack" showNavButton="true">
+				<content>
+					<uxap:ObjectPageLayout id="ObjectPageLayout"  showTitleInHeaderContent="true">
+						<uxap:headerTitle>
+							<!--<uxap:ObjectPageHeader id="headerForTest"-->
+							<!--	  objectTitle="{JSON>FirstName} {JSON>LastName} ({JSON>NickName})"/>-->
+							<uxap:ObjectPageHeader objectImageURI="" objectImageShape="Circle"
+								objectTitle="{Model>Firstname} {Model>Lastname} ({Model>Nickname})"  id="ObjectPageLayoutHeaderTitle"
+								isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="false" isObjectSubtitleAlwaysVisible="false" isActionAreaAlwaysVisible="true"
+								showPlaceholder="true"/>
+						</uxap:headerTitle>
+						<uxap:headerContent>
+							
+							<!--<p:Avatar src="{JSON>Picture}" displaySize="L" displayShape="Circle" class="sapUiTinyMarginEnd"/>-->
+							<l:VerticalLayout>
+								<ObjectStatus text="{Model>Position}"/>
+								<ObjectStatus text="{Model>Tel}"/>
+								<ObjectStatus text="{Model>Email}"/>
+							</l:VerticalLayout>
+						</uxap:headerContent>
+						
+						<uxap:sections>
+							<uxap:ObjectPageSection title="Employee Information" titleUppercase="false">
+								<uxap:subSections>
+									<uxap:ObjectPageSubSection>
+										<uxap:blocks>
+											<f:SimpleForm id="detailForm" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1"
+												columnsM="1">
+												<f:content >
+													<Label text="{i18n>employeeID}"/>
+													<Text text="{Model>EmployeeID}"/>
+													<Label text="{i18n>nameEng}"/>
+													<Text text="{Model>Firstname} {Model>Lastname} ({Model>Nickname})"/>
+													<Label text="{i18n>nameThai}"/>
+													<Text text="{Model>Firstname} {Model>Lastname} ({Model>Nickname})"/>
+													<Label text="{i18n>gender}"/>
+													<Text text="{Model>Gender}"/>
+													<Label text="{i18n>DateB}"/>
+													<Text text="{Model>Birthdate}"/>
+													<Label text="{i18n>emai}"/>
+													<Text text="{Model>Email}"/>
+													<Label text="{i18n>mobile}"/>
+													<Text text="{Model>Tel}"/>
+													<Label text="{i18n>Line}"/>
+													<Text text="{Model>Line}"/>
+												</f:content>
+											</f:SimpleForm>
+										</uxap:blocks>
+									</uxap:ObjectPageSubSection>
+								</uxap:subSections>
+							</uxap:ObjectPageSection>
+						</uxap:sections>
+					</uxap:ObjectPageLayout>
+				</content>
+			</Page>
+	<!--	</pages>-->
+	<!--</App>-->
+</mvc:View>

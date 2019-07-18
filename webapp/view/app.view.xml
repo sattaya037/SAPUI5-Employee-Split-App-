@@ -1,0 +1,3 @@
+<mvc:View controllerName="employee.employee.controller.app" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<SplitApp id="splitapp" mode="PopoverMode"></SplitApp>
+</mvc:View>
